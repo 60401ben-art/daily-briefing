@@ -1,0 +1,17 @@
+title: 每日財經晨報
+description: 總體經濟 × 台股開盤前情報，每個交易日自動更新
+theme: minima
+lang: zh-Hant
+baseurl: "/daily-briefing"
+url: "https://60401ben-art.github.io"
+
+future: true
+
+minima:
+  date_format: "%Y-%m-%d"
+
+header_pages:
+  - index.md
+
+plugins:
+  - jekyll-feed
