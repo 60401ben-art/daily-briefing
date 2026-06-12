@@ -4,6 +4,8 @@ title: "📊 台股開盤前情報 2026-06-09"
 date: 2026-06-09 07:00:00 +0800
 categories: 台股
 ---
+👉 **[📊 投影片版（快速閱讀）](/daily-briefing/slides.html?deck=/daily-briefing/slides/2026-06-09-premarket.md)**
+
 {% raw %}
 
 > ✅ 交易日確認：今日為**正常交易日**（端午節休市為 6/19，與今日無關）。（來源：[TWSE 休市日](https://www.twse.com.tw/zh/trading/holiday.html)）

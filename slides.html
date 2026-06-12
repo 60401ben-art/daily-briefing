@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>晨報投影片</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
+  <style>
+    .reveal { font-family: "Noto Sans TC", "Microsoft JhengHei", system-ui, sans-serif; }
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.4em; color: #1a5276; }
+    .reveal section { text-align: left; }
+    .reveal section h1, .reveal section h2 { text-align: center; }
+    .reveal ul { display: block; font-size: 0.85em; }
+    .reveal img { max-height: 320px; display: block; margin: 0.4em auto; }
+    .reveal strong { color: #c0392b; }
+    .reveal .slide-number { font-size: 16px; }
+    #err { color:#c0392b; font-family:sans-serif; padding:2em; }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section data-markdown=""
+               data-separator="^\r?\n---\r?\n"
+               data-separator-vertical="^\r?\n----\r?\n"
+               data-charset="utf-8">
+      </section>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/markdown/markdown.js"></script>
+  <script>
+    var deck = new URLSearchParams(location.search).get('deck');
+    if (deck) {
+      document.querySelector('section[data-markdown]').setAttribute('data-markdown', deck);
+      Reveal.initialize({ hash: true, slideNumber: 'c/t', plugins: [ RevealMarkdown ] });
+    } else {
+      document.body.innerHTML = '<div id="err">缺少投影片參數。請從晨報文章點「投影片版」連結進入。</div>';
+    }
+  </script>
+</body>
+</html>
